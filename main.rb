@@ -65,6 +65,10 @@ get '/new' do
   erb :new
 end
 
+get '/session/new' do
+  erb :login
+end
+
 # route to show all current users items
 get '/wishlist' do
   # runs the function to check if anyone is there

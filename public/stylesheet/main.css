@@ -1,8 +1,13 @@
 body {
-  text-align: center;
-  position: fixed;
-  background-size: cover;
+  margin: 0 auto;
+  max-width: 50em;
+  /*text-align: center;*/
+  /*position: fixed;*/
+  background-si\e: cover;
   background-image: url(http://i2.mirror.co.uk/incoming/article4870900.ece/ALTERNATES/s1200/SANTA.jpg);
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
 }
 
 .header {
@@ -28,35 +33,46 @@ body {
 }
 
 .button {
-  background-color: yellow;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 2px solid black;
 }
 
 h1 {
   font-size: 2.5em;
   font-family: 'Bilbo Swash Caps', cursive;
-  color: red;
+  color: #CC0000;
 }
 
 h4 {
   font-size: 1.3em;
   color: green;
+  margin-top: 1em;
+  padding-top: 1em;
 }
 
-p {
-  font-size: 20px;
+.label {
+  color: #000000;
+}
+
+
+p, a, {
   font-family: 'Rubik', sans-serif;
+  font-size: 20px;
   color: blue;
 }
 
 .form {
   font-size: 1em;
   font-family: 'Rubik', sans-serif;
-  color: yellow;
+  color: #CC0000;
+  background-color: #000000;
+  display: inline-block;
 }
 
 a { text-decoration: none; }
-a:visited { color:blue; }
-a:hover { color:black; }
+a:visited { color:black; }
+a:hover { color:#CC0000; }
 a:active { color:green }
 a:focus { color:red; }
 
