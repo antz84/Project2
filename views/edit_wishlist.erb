@@ -1,0 +1,16 @@
+<h1>Edit Wishlist</h1>
+
+<form action="/items/<%= @item['id'] %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="">Item</label>
+  <input type="text" name="name" value="<%= @item['name'] %>">
+
+  <label for="">Picture</label>
+  <input type="text" name="pic" value="<%= @item['pic'] %>">
+
+  <label for="">Price</label>
+  <input type="text" name="price" value="<%= @item['price'] %>">
+
+  <button>Update</button>
+</form>

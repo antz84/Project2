@@ -1,0 +1,10 @@
+<div class="header">
+  <% if logged_in? %>
+    <h4>Logged in as: <%= current_user.username %></h4>
+    <% end %>
+
+  <h1>Dear Santa</h1>
+  <a href="/login">Log In</a>
+  <a href="/create_account">Create Account</a>
+  <a href="/users/<%= current_user.id %>">My Profile</a>
+</div>
