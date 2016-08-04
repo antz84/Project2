@@ -109,3 +109,31 @@ get '/users/:id' do
   @single_user = User.find(params[:id])
   erb :profile
 end
+
+get '/create_item' do
+  erb :create_item
+end
+
+put '/create_item' do
+  if !logged_in?
+    redirect to '/'
+  end
+
+  item = Item.new
+  item.name = params[:name]
+  item.pic = params[:pic]
+  item.price = params[:price]
+  # item.user_id = current_user.user_id
+  item.save
+
+  redirect to '/'
+end
+
+put '/wishilst' do
+  erb :wishilst
+end
+
+delete '/session' do
+  session[:user_id] = nil
+  redirect to '/'
+end
