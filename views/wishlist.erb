@@ -12,10 +12,6 @@
     <button>Delete</button>
   </form>
 
-  <form action="/edit/<%= item.id %>" method="post">
-    <input type="hidden" name="_method" value="put">
-    <button>Edit</button>
-  </form>
-
-
 <% end %>
+
+<a href="/users/<%= current_user.id %>">My Profile</a>
