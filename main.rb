@@ -2,7 +2,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'pg'
-require 'pry'
 
 # local stuff we need
 require_relative 'db_config'
@@ -73,7 +72,7 @@ end
 get '/wishlist' do
   # runs the function to check if anyone is there
   if logged_in?
-    @item = Item.all
+    @item = Item.where(user_id: session[:user_id])
     erb :wishlist
   else
     redirect to '/'
