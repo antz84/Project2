@@ -1,6 +1,6 @@
 # outside stuff we need
 require 'sinatra'
-require 'sinatra/reloader'
+# require 'sinatra/reloader'
 require 'pg'
 
 # local stuff we need
