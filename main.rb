@@ -126,17 +126,23 @@ put '/create_item' do
   item.name = params[:name]
   item.pic = params[:pic]
   item.price = params[:price]
-  # item.user_id = current_user.user_id
+  item.user_id = current_user.id
   item.save
 
   redirect to '/'
 end
 
-put '/wishilst' do
+put '/wishlist' do
   erb :wishilst
 end
 
 delete '/session' do
   session[:user_id] = nil
   redirect to '/'
+end
+
+delete '/del/:id' do
+  del = Item.find_by(id: params[:id])
+  del.destroy
+  redirect to '/wishlist'
 end
