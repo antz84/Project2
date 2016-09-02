@@ -1,4 +1,4 @@
-![Christmas](http://kingofwallpapers.com/christmas/christmas-019.jpg)
+![Christmas](kingofwallpapers.com/christmas/christmas-019.jpg)
 
 ##WDI8 Project 2
 #Dear Santa
@@ -23,21 +23,7 @@ _July 2016_
 -Once I have created and edited my wishlist items to my satisfaction, I can then navigate to the _view wishlist_ page to view what Santa is bringing me for Christmas. *Results may vary.*
 
 ###Dear Santa was built using...
--`HTML`
--`CSS`
--`JavaScript`
--`Ruby`
--`PSQL`
--`Sinatra`
--`Sinatra/Reloader`
--`Postgres`
--`Bcrypt`
--`Pry`
--`Active Record`
--`Git`
--`GitHub`
--`Heroku`
--`Blood, sweat and Christmas cheers`
+`HTML` `CSS` `JavaScript` `Ruby` `PSQL` `Sinatra` `Sinatra/Reloader` `Postgres` `Bcrypt` `Pry` `Active Record` `Git` `GitHub` `Heroku` `Blood, sweat and Christmas cheers`
 
 ###[DearSanta](https://dearsanta2.herokuapp.com/)
 
